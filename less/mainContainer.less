@@ -1,0 +1,155 @@
+// Main Container Files
+.mainContainer{
+    .displayFlex(@justify: space-between, @align: start);
+
+    @media (max-width: 1000px){
+        flex-direction: column;
+    }
+
+
+    .leftContainer{
+        width: 30%;
+        align-self: stretch; 
+
+        display: flex; 
+        // flex-wrap: wrap; 
+        flex-direction: column; 
+        justify-content: space-evenly; 
+        
+        @media (max-width: 1000px){
+            border-top: 1px solid @greyColor; 
+            margin: 10% 0 0 0; 
+            width: 100%; 
+            order: 2; 
+        }
+
+        .skillsContainer{
+            .displayFlex(@direction: column, @align: start);
+            // width: 100%; 
+            padding: 0 0 0 16%; 
+
+            @media (max-width: 1000px){
+                flex-direction: row; 
+                justify-content: flex-end;
+
+                width: 100%; 
+                padding: 4% 0 0 0; 
+
+            }
+
+            .leftHeader{
+                font-size: 3.3rem; 
+                margin: 0 0 4% 0; 
+
+                @media (max-width: 1000px){
+                    width: 26%; 
+                    font-size: 2.7rem; 
+                    padding: 0 2% 0 0; 
+            
+                    text-align: right; 
+
+                }
+            }
+            .skills{
+
+                width: 100%; 
+                font-size: 2rem; 
+                color: @greyColor; 
+    
+                display: flex; 
+                flex-direction: column;
+
+                @media (max-width: 1000px){
+                    width: 65%; 
+                    margin: 0 0 3% 4%; 
+                }
+    
+                .skill{
+                    // width: 100%; 
+                    padding: 0 0 4% 0; 
+                }
+            }
+        }
+    }
+
+    .rightContainer{
+        width: 68%; 
+        .displayFlex(@direction: column, @align: flex); 
+
+        @media (max-width: 1000px){
+            width: 100%; 
+        }
+
+        .rightHeader {
+            color: @mainColor; 
+            font-size: 4rem; 
+            border-bottom: 1px solid @greyColor; 
+            padding: 0 0 0 2%; 
+            
+            @media (max-width: 1000px){
+                padding: 0; 
+                text-align: center; 
+            }
+        }
+
+        #education{
+            margin: 10% 0 0 0; 
+        }
+
+        .historyContainer{
+            margin: 2% 0 4% 0; 
+
+            .displayFlex(@justify: space-between, @align: start);
+
+            @media (max-width: 1000px){
+                justify-content: flex-end; 
+            }
+
+
+            .overviewContainer{
+                width: 35%; 
+                text-align: right; 
+
+                @media (max-width: 1000px){
+                    width: 26%; 
+                    padding: 0 2% 0 0; 
+                }
+
+                .title{
+                    font-size: 2.7rem;
+                }
+                .location{
+                    margin: 2% 0 0 0; 
+                    color: @greyColor; 
+                    font-size: 2rem; 
+                    font-style: italic; 
+                }
+                .years{
+                    margin: 2% 0 0 0; 
+                    color: @greyColor; 
+                    font-size: 2rem; 
+                    font-style: italic; 
+                }
+            }
+
+            .detailsContainer{
+                width: 50%; 
+
+                font-size: 2rem; 
+                color: @greyColor; 
+                line-height: 2.5rem;
+
+                @media (max-width: 1000px){
+                    width: 65%; 
+                    padding: 0 0 0 4%; 
+                }
+
+                li{
+                    margin: 0 0 2% 0; 
+                }
+            }
+
+
+        }
+    }
+}

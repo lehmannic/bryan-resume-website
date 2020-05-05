@@ -1,0 +1,76 @@
+// Header Styles
+
+header{
+    width: 100%; 
+    height: 97vh; 
+    
+    // .tb(red);
+
+    @media (max-width: 1000px){
+        height: 75vh; 
+    }
+
+    .bannerLinks {
+        // .tb(green); 
+        .displayFlex(@justify: space-between); 
+        padding-top: 2%; 
+
+        a {
+            margin: .5%; 
+            color: @altColor; 
+            text-decoration: none;
+            font-size: 2rem; 
+        }
+
+        #resumePDF{
+            position: fixed;
+            align-self: start; 
+            text-align: center; 
+            color: @mainColor; 
+        }
+
+        .navLinks{
+            .displayFlex(@direction: column, @align: flex-end); 
+            width: 100%; 
+            padding-right: 1%; 
+        }
+    }
+
+    .banner {
+        .displayFlex(@justify: flex-start, @align: start); 
+        flex-wrap: wrap; 
+        // .tb(green); 
+
+        .headshot{
+            width: 31%; 
+        }
+
+        .name{
+            width: 31%; 
+            padding: 2% 0 0 2%; 
+
+            font-size: 8rem; 
+            color: @mainColor; 
+            letter-spacing: 1rem;
+        }
+        .aboutMe{
+            // width: 100%; 
+            font-size: 2.5rem; 
+            color: @greyColor; 
+            font-style: italic; 
+            text-align: center; 
+            line-height: 1.3;
+            margin: -8% 0 0 0; 
+            padding: 0 5% 0 50%;
+
+            @media (max-width: 1000px){
+                margin: auto 0; 
+            }
+
+    
+        }
+    }
+
+
+}
+

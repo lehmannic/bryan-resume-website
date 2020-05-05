@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="5722.67" viewBox="0 0 1280 5722.67">
+  <defs>
+    <clipPath id="clip-Bryan_1280_view_800_Background">
+      <rect width="1280" height="5722.67"/>
+    </clipPath>
+  </defs>
+  <g id="Bryan_1280_view_800_Background" data-name="Bryan 1280 (view 800) Background" clip-path="url(#clip-Bryan_1280_view_800_Background)">
+    <rect width="1280" height="5722.67" fill="#fff"/>
+    <rect id="left_side_bar_400_" data-name="left_side_bar(400)" width="400" height="5723" fill="#dfe0e0"/>
+    <g id="Group_3" data-name="Group 3">
+      <rect id="top_left_1280_-35_550_400_" data-name="top_left_1280(-35_550_400)" width="900" height="531.514" transform="translate(-376.238 40.414) rotate(-35)" fill="#3b4358"/>
+      <rect id="top_right_1280_15_1100_300_" data-name="top_right_1280(15_1100_300)" width="1438" height="688" transform="matrix(0.966, 0.259, -0.259, 0.966, 273.827, -682.516)" fill="#d1826f"/>
+    </g>
+  </g>
+</svg>
