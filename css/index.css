@@ -287,7 +287,12 @@ header .banner .aboutMe {
   }
 }
 .mainContainer .leftContainer .skillsContainer .skills .skill {
-  padding: 0 0 4% 0;
+  padding: 0 0 4% 4%;
+}
+@media (max-width: 1000px) {
+  .mainContainer .leftContainer .skillsContainer .skills .skill {
+    padding-left: 0;
+  }
 }
 .mainContainer .rightContainer {
   width: 68%;
